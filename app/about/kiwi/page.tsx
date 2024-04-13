@@ -1,6 +1,8 @@
 export const dynamic = 'force-static'
 import { Metadata } from "next"
-import Link from "next/link"
+import CallToAction from "./cta/page"
+import Hero from "./hero/page"
+import Iternary from "./iternary/page"
 
 export const metadata: Metadata = {
     title: 'About',
@@ -10,8 +12,10 @@ export const metadata: Metadata = {
 export default async function About() {
     
     return (
-        <main className="p-24">
-            <Link href="/about/kiwi">Ujzeland</Link>
+        <main className="bg-hero-pattern h-screen fixed ">
+            <Hero />
+            <Iternary />
+            <CallToAction />
         </main>
     )
 }

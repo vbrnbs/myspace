@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-    <nav className="w-screen flex justify-between py-2 px-4 bg-primary">
+    <nav className="flex justify-between py-2 px-4 bg-primary text-secondary">
       <Link href="/">
         Brainsapce
       </Link>
@@ -17,7 +17,7 @@ const Navbar = () => {
           <Link href="/blog">
             Blog
           </Link>
-        </li>
+        </li> 
         <li>
           <Link href="/users">
             Users
