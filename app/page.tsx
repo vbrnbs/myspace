@@ -1,19 +1,12 @@
-import { SignInButton } from "@/components/ui/buttons";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
+import { authOptions } from "./api/auth/[...nextauth]/route";
 
 export default async function Home() {
-  const session  = await getServerSession();
+  const session = await getServerSession(authOptions);
 
   if (!session) {
     redirect("/api/auth/signin");
-    // return <>You must <SignInButton /></>
-    
   }
-
-  return (
-    <main className="h-screen p-24">
-      
-    </main>
-  )
+  return <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>;
 }
