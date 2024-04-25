@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { SignInButton } from './ui/buttons';
+import { SignInButton } from './Buttons';
 
 
 const Navbar = () => {

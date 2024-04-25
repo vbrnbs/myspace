@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={sans.className}>
         <Navbar />
+        <div className='p-6'>
         {children}
+        </div>
         </body>
     </html>
     </AuthProvider>

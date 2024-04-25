@@ -3,7 +3,7 @@
 import { useSession, signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from './button';
+import { Button } from './ui/button';
 
 export function SignInButton() {
   const { data: session, status } = useSession();
@@ -35,4 +35,14 @@ export function SignInButton() {
 
 export function SignOutButton() {
   return <Button onClick={() => signOut()}>Sign out</Button>;
+}
+
+export function FollowButton() {
+  return (
+    <Button
+    onClick={() => {}}
+    >
+      Follow
+    </Button>
+  );
 }
