@@ -8,5 +8,8 @@ export default async function Home() {
   if (!session) {
     redirect("/api/auth/signin");
   }
-  return <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>;
+  console.log(session)
+  return <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    MAIN
+  </main>;
 }

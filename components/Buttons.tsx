@@ -37,12 +37,4 @@ export function SignOutButton() {
   return <Button onClick={() => signOut()}>Sign out</Button>;
 }
 
-export function FollowButton() {
-  return (
-    <Button
-    onClick={() => {}}
-    >
-      Follow
-    </Button>
-  );
-}
+
